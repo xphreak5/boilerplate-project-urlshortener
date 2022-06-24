@@ -41,7 +41,7 @@ app.post("/api/shorturl", async (req, res) => {
 app.get("/api/shorturl/:id", (req, res) => {
   const id = req.params.id
   urls.forEach(url => {
-    if (url.short_url === id) {
+    if (urls.short_url === id) {
       res.json(url)
     }
   })
